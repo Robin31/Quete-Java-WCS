@@ -1,22 +1,10 @@
 public class Movie {
     public static void main(String[] args) {
+        String nameMovie = "Indiana Jones and the Last Crusade";
+        boolean isSeen = true;
+        int yearOfRelease = 1989;
+        float movieRating = 8.2f;
 
-        String[] indianaMovies= new String[] {
-                "Raiders of the Lost Ark",
-                "Indiana Jones and the Temple of Doom",
-                "Indiana Jones and the Last Crusade "
-        };
-        String[][] actors = new String[][]{
-                {"Harrison Ford", "Karen Allen", "Paul Freeman"},
-                {"Harrison Ford", "Kate Capshaw", "Ke Huy Quan"},
-                {"Harrison Ford", "Sean Connery", "Alison Doody"}
-        };
-
-        for (int i = 0; i < indianaMovies.length; i++) {
-            System.out.println("Dans le film " + indianaMovies[i] + "les acteurs sont :");
-            for (int j = 0; j < actors[i].length; j++) {
-                System.out.println(actors[i][j]);
-            }
-        }
+        System.out.println(nameMovie + " est sortie en " + yearOfRelease + ". il est noté " + movieRating + " sur 10 sur IMDB. Et est ce que je l'ai vu ? " + isSeen);
     }
 }
